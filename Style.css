@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #40b0f5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#calculator {
+    text-align: center;
+}
+
+button {
+    align-items: center;
+}
+
+#result {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e02bda;
+}

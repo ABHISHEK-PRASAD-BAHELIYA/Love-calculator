@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Calculator</title>
+    <link rel="stylesheet" href="Style.css" />
+</head>
+<body>
+    <div>
+        <h1>Love Calculator</h1>
+        <label for="yourName">Your Name:</label>
+        <input type="text" id="yourName" placeholder="yourName"><br>
+        <h1 style="font-family: cursive;">
+            ❤️ Love ❤️</h1>
+
+        <label for="partnerName">Partner's Name:</label>
+        <input type="text" id="partnerName" placeholder="Partner's Name">
+
+        <br><br>
+        <button onclick="calculateLove()">Calculate Love</button>
+        <br><br>
+        <div id="result"></div>
+    </div>
+    <script>
+        function calculateLove() {
+        let yourName = document.getElementById("yourName").value;
+        let partnerName = document.getElementById("partnerName").value;
+        let lovePercentage = Math.floor(Math.random() * 101);
+        let resultElement = document.getElementById("result");
+
+        resultElement.innerHTML =`${yourName} and ${partnerName}'s Love Percentage is: ${lovePercentage}%`;
+}
+    </script>
+</body>
+</html>
